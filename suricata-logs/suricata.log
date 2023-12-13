@@ -1,0 +1,37 @@
+[79076 - Suricata-Main] 2023-12-09 09:46:09 Notice: suricata: This is Suricata version 7.0.2 RELEASE running in USER mode
+[79076 - Suricata-Main] 2023-12-09 09:46:09 Info: cpu: CPUs/cores online: 4
+[79076 - Suricata-Main] 2023-12-09 09:46:09 Info: suricata: Setting engine mode to IDS mode by default
+[79076 - Suricata-Main] 2023-12-09 09:46:09 Info: exception-policy: master exception-policy set to: auto
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: logopenfile: fast output device (regular) initialized: fast.log
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: logopenfile: stats output device (regular) initialized: stats.log
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Warning: detect: 1 rule files specified, but no rules were loaded!
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[79077 - RX#01] 2023-12-09 09:46:10 Info: pcap: Starting file run for file.pcap
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[79077 - RX#01] 2023-12-09 09:46:10 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[79077 - RX#01] 2023-12-09 09:46:10 Info: pcap: pcap file file.pcap end of file reached (pcap err code 0)
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Notice: suricata: Signal Received.  Stopping engine.
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: suricata: time elapsed 0.159s
+[79077 - RX#01] 2023-12-09 09:46:10 Notice: pcap: read 1 file, 25759 packets, 5675281 bytes
+[79076 - Suricata-Main] 2023-12-09 09:46:10 Info: counters: Alerts: 0
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Notice: suricata: This is Suricata version 7.0.2 RELEASE running in USER mode
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: cpu: CPUs/cores online: 4
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: suricata: Setting engine mode to IDS mode by default
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: exception-policy: master exception-policy set to: auto
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: logopenfile: fast output device (regular) initialized: fast.log
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[79169 - Suricata-Main] 2023-12-09 09:46:32 Info: logopenfile: stats output device (regular) initialized: stats.log
+[79169 - Suricata-Main] 2023-12-09 09:46:40 Info: detect: 1 rule files processed. 35671 rules successfully loaded, 0 rules failed
+[79169 - Suricata-Main] 2023-12-09 09:46:40 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[79169 - Suricata-Main] 2023-12-09 09:46:40 Info: detect: 35674 signatures processed. 1302 are IP-only rules, 5330 are inspecting packet payload, 28830 inspect application layer, 108 are decoder event only
+[79233 - RX#01] 2023-12-09 09:46:58 Info: pcap: Starting file run for file.pcap
+[79169 - Suricata-Main] 2023-12-09 09:46:58 Notice: threads: Threads created -> RX: 1 W: 4 FM: 1 FR: 1   Engine started.
+[79233 - RX#01] 2023-12-09 09:46:58 Info: checksum: No packets with invalid checksum, assuming checksum offloading is NOT used
+[79233 - RX#01] 2023-12-09 09:46:58 Info: pcap: pcap file file.pcap end of file reached (pcap err code 0)
+[79169 - Suricata-Main] 2023-12-09 09:46:58 Notice: suricata: Signal Received.  Stopping engine.
+[79169 - Suricata-Main] 2023-12-09 09:46:58 Info: suricata: time elapsed 0.376s
+[79233 - RX#01] 2023-12-09 09:46:58 Notice: pcap: read 1 file, 25759 packets, 5675281 bytes
+[79169 - Suricata-Main] 2023-12-09 09:46:58 Info: counters: Alerts: 653
