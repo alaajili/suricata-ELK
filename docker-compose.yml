@@ -21,7 +21,7 @@ services:
     volumes:
       - ./logstash/pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
-      - /home/r4ndom/Desktop/suricata-ELK/suricata-logs:/suricata-logs
+      - suricata-logs:/suricata-logs
     ports:
       - "5044:5044"
     environment:
@@ -43,6 +43,30 @@ services:
     depends_on:
       - elasticsearch
 
+  suricata:
+    image: oisf/suricata:latest
+    container_name: suricata
+    volumes:
+      - ./suricata/suricata.yaml:/etc/suricata/suricata.yaml
+      - ./suricata/rules:/etc/suricata/rules
+      - suricata-logs:/var/log/suricata
+    networks:
+      - elk_network
+    cap_add:
+      - net_admin
+    depends_on:
+      - logstash
+
 networks:
   elk_network:
     driver: bridge
+
+volumes:
+  suricata-logs:
+    name: suricata-logs
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/r4ndom/Desktop/suricata-ELK/suricata-logs
+    
