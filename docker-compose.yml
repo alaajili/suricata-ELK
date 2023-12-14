@@ -47,8 +47,15 @@ services:
     image: jasonish/suricata:latest
     container_name: suricata
     network_mode: host
+    command: suricata -c /etc/suricata/suricata.yaml -i enp0s25
+    cap_add:
+      - net_admin
+      - net_raw
+      - sys_nice
     volumes:
       - suricata-logs:/var/log/suricata
+    depends_on:
+      - elasticsearch
     
 
 networks:
